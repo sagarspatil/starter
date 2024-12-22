@@ -5,7 +5,6 @@ return {
     opts = require "configs.conform",
   },
 
-  -- These are some examples, uncomment them if you want to see them work!
   {
     "neovim/nvim-lspconfig",
     config = function()
@@ -22,4 +21,9 @@ return {
   -- 		},
   -- 	},
   -- },
+
+  -- Require additional plugin specification files
+  require("plugins.fine_cmdline"),
+
+  -- ... other plugins
 }
